@@ -17,7 +17,7 @@
 加环境变量，在训练脚本中加或者终端输入都可以
 ```bash
 export PYTHONPATH="/opt/NeMo:$PYTHONPATH"
-export TMPDIR=/path/to/directory/with/more/space  #改成/mnt/data/.../tmp，这个不改会报错No space left on device: '/tmp/
+export TMPDIR=/maindata/data/shared/public/yangchao.zhou/opt/tmp  #改成/mnt/data/.../tmp，这个不改会报错No space left on device: '/tmp/
 ```
 启动训练
 ```bash
