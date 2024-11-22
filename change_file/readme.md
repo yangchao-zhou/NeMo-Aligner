@@ -22,6 +22,8 @@ export TMPDIR=/maindata/data/shared/public/yangchao.zhou/opt/tmp  #改成/mnt/da
 启动训练
 ```bash
 bash change_file/mistral_sft.sh
+nohup bash change_file/mistral_sft.sh > output.log 2>&1 &
+
 ```
 ## 转点
 用本地的NeMo代码库（git clone的），不要用/opt/NeMo的

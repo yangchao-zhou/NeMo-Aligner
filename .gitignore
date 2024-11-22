@@ -157,3 +157,4 @@ wandb
 *.jsonl
 
 results
+nemo_experiments
