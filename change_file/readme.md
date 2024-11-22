@@ -17,12 +17,17 @@
 加环境变量，在训练脚本中加或者终端输入都可以
 ```bash
 export PYTHONPATH="/opt/NeMo:$PYTHONPATH"
-export TMPDIR=/maindata/data/shared/public/yangchao.zhou/opt/tmp  #改成/mnt/data/.../tmp，这个不改会报错No space left on device: '/tmp/
+export TMPDIR="/maindata/data/shared/public/yangchao.zhou/opt/tmp"  #改成/mnt/data/.../tmp，这个不改会报错No space left on device: '/tmp/
+运行以下命令查看临时文件的创建路径：
+mktemp
+如果返回的路径以 /maindata/data/shared/public/yangchao.zhou/opt/tmp 开头，则说明 TMPDIR 设置生效
 ```
 启动训练
 ```bash
 bash change_file/mistral_sft.sh
 nohup bash change_file/mistral_sft.sh > output.log 2>&1 &
+ps -ef | grep change_file/mistral_sft.sh
+
 
 ```
 ## 转点

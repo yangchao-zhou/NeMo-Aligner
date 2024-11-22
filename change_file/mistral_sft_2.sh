@@ -26,7 +26,7 @@ python /opt/NeMo-Aligner/examples/nlp/gpt/train_gpt_sft.py \
     model.optim.name=distributed_fused_adam \
     model.optim.lr=3e-6 \
     model.optim.sched.name=CosineAnnealing \
-    model.optim.sched.warmup_steps=50 \
+    model.optim.sched.warmup_steps=100 \
     model.optim.sched.constant_steps=0 \
     model.optim.sched.min_lr=1e-7 \
     model.data.chat=True \
